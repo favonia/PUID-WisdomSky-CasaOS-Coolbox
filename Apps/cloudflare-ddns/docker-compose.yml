@@ -3,9 +3,8 @@ services:
   app:
     image: favonia/cloudflare-ddns:latest
     restart: unless-stopped
+    user: "${PUID}:${PGID}"
     environment:
-      PUID: $PUID
-      PGID: $PGID
       CF_API_TOKEN: ''
       DOMAINS: ''
       PROXIED: ''
