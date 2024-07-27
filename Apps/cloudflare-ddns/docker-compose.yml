@@ -1,7 +1,7 @@
 name: cloudflare-ddns
 services:
   app:
-    image: favonia/cloudflare-ddns:sha256-5513d069280ddbdc5fbe2250693a0a52c4f73d1219fb0f7e49201f368ab635ff.sig
+    image: favonia/cloudflare-ddns:latest
     restart: unless-stopped
     environment:
       PUID: $PUID
